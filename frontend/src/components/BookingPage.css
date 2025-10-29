@@ -1,0 +1,151 @@
+.booking-page {
+  padding: 2rem;
+  text-align: center;
+  background-color: #121212;
+  min-height: 100vh;
+  color: white;
+}
+
+.booking-page h2 {
+  color: #ff6600;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+/* Booking Card */
+.booking-card.page-section {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  max-width: 600px;   /* reduced size */
+  width: 90%;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(255, 165, 0, 0.25);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  overflow: hidden;
+}
+
+/* Car Image */
+.car-image-container {
+  flex: 1 1 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.booking-car-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Car Info */
+.booking-car-info {
+  flex: 1 1 200px;
+  text-align: left;
+}
+
+.booking-car-info h3 {
+  color: #ff6700;
+  margin-bottom: 10px;
+}
+
+/* Booking Form */
+.booking-form {
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 10px;
+}
+
+.dates-row {
+  display: flex;
+  gap: 35px; /* Added gap between dates */
+}
+
+.date-item {
+  flex: 1;
+}
+
+.date-item input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: none;
+}
+
+/* Summary row */
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  gap: 20px;
+}
+
+.summary-item p {
+  margin: 0;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Pay Button */
+.btn-primary {
+  margin-top: 10px;
+  background: #ff6600;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-primary:hover {
+  background: #ff8533;
+}
+
+.toast-bubble {
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  padding: 14px 18px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  animation: slideIn 0.3s ease, fadeOut 0.3s ease 3s forwards;
+  z-index: 9999;
+  max-width: 320px;
+  line-height: 1.4;
+}
+
+/* Colors by type */
+.toast-bubble.success {
+  background-color: #2ecc71;
+}
+.toast-bubble.error {
+  background-color: #e74c3c;
+}
+.toast-bubble.warning {
+  background-color: #f39c12;
+}
+.toast-bubble.info {
+  background-color: #3498db;
+}
+
+/* Animations */
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+  to { opacity: 0; transform: translateY(40px); }
+}

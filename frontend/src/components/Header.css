@@ -1,0 +1,105 @@
+/* ==== Top Bar (Navbar) ==== */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111; /* black navbar */
+  padding: 15px 40px;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.logo .subtitle {
+  font-size: 0.9rem;
+  color: #ff6a1a; /* orange */
+  font-weight: normal;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #ff6a1a;
+}
+
+/* ==== Buttons ==== */
+.nav-btn {
+  padding: 10px 22px;
+  border-radius: 25px; /* fully rounded */
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15); /* soft shadow */
+}
+
+/* Login button */
+.login-btn {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #ff6a1a; /* orange border */
+}
+
+.login-btn:hover {
+  background: #ff6a1a;
+  color: #fff;
+}
+
+/* Signup button */
+.signup-btn {
+  background: #ff6a1a;
+  color: #fff;
+  margin-left: 10px;
+  border: 2px solid #ff6a1a;
+}
+
+.signup-btn:hover {
+  background: transparent;
+  color: #ff6a1a;
+}
+
+/* Profile button */
+.profile-btn {
+  background: #333;
+  color: #fff;
+  border: 2px solid #ff6a1a;
+  margin-left: 10px;
+}
+
+.profile-btn:hover {
+  background: #ff6a1a;
+  color: #fff;
+}
+
+
+/* ==== Info Bar (Orange Bar) ==== */
+.info-bar {
+  background-color: #ff6a1a;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 10px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.info-bar i {
+  margin-right: 6px;
+}

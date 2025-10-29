@@ -1,0 +1,26 @@
+.page-section {
+  background-color: #1e1e1e;  /* dark background */
+  color: #f0f0f0;             /* off-white text for readability */
+  padding: 40px;
+  max-width: 900px;
+  margin: 40px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(255, 165, 0, 0.2); /* subtle orange glow */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page-section h2 {
+  color: #ff6700;            /* bright orange heading */
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.page-section p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  text-align: justify;
+  letter-spacing: 0.03em;
+}

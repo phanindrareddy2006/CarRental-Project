@@ -1,0 +1,69 @@
+.page-section {
+  background-color: #1e1e1e;  /* dark background */
+  color: #f0f0f0;             /* light text */
+  padding: 40px;
+  max-width: 900px;
+  margin: 40px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(255, 106, 26, 0.2); /* subtle orange glow */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page-section h2 {
+  color: #ff6a1a;             /* orange heading */
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.page-section p {
+  font-size: 1.05rem;
+  margin-top: 10px;
+  text-align: center;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.page-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.page-section thead tr {
+  border-bottom: 2px solid #ff6a1a;
+}
+
+.page-section thead th {
+  text-align: left;
+  padding: 12px 8px;
+  color: #ff6a1a;
+  font-weight: 700;
+}
+
+.page-section tbody tr {
+  border-bottom: 1px solid #444;
+  transition: background-color 0.3s ease;
+}
+
+.page-section tbody tr:hover {
+  background-color: #333; /* subtle highlight on hover */
+}
+
+.page-section tbody td {
+  padding: 12px 8px;
+  color: #eee;
+}
+
+.page-section tbody td:first-child {
+  font-weight: 600;
+  color: #fff;
+}
+
+.page-section .note {
+  margin-top: 20px;
+  font-style: italic;
+  color: #ccc;
+}

@@ -1,0 +1,81 @@
+/* Centered and bigger contact form section */
+.page-section {
+  background-color: #1e1e1e;           /* dark background */
+  color: #f0f0f0;                      /* light text */
+  padding: 50px 40px;                  /* more padding for bigger look */
+  width: 90%;
+  max-width: 700px;                    /* bigger box */
+  margin: 80px auto;                   /* center vertically with margin */
+  border-radius: 12px;                 /* slightly more rounded corners */
+  box-shadow: 0 8px 24px rgba(255, 106, 26, 0.3); /* stronger orange glow */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-section h2 {
+  color: #ff6a1a;                      /* orange heading */
+  font-weight: 700;
+  font-size: 2.5rem;                   /* bigger heading */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.page-section p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  text-align: center;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+}
+
+.page-section form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;                           /* more spacing between fields */
+}
+
+.page-section input,
+.page-section textarea {
+  background-color: #2e2e2e;           /* dark input background */
+  color: #f0f0f0;
+  padding: 14px;                       /* bigger input padding */
+  border-radius: 6px;
+  border: 1px solid #bdbdbd;
+  font-size: 1.05rem;
+  font-family: inherit;
+  resize: vertical;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.page-section input:focus,
+.page-section textarea:focus {
+  outline: none;
+  border-color: #ff6a1a;               /* orange border on focus */
+  background-color: #3a3a3a;
+}
+
+.page-section button {
+  background-color: #ff6a1a;
+  color: #fff;
+  padding: 14px;
+  border-radius: 6px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.2s ease;
+}
+
+.page-section button:hover {
+  background-color: #cd5503;
+}
+
+.page-section p.submit-message {
+  margin-top: 20px;
+  color: #66bb6a;                      /* green success */
+  font-weight: 600;
+  text-align: center;
+}

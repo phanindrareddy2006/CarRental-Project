@@ -1,0 +1,155 @@
+.profile-section {
+  background-color: #1e1e1e;  /* dark background */
+  color: #fff;             /* light text */
+  padding: 40px;
+  max-width: 900px;
+  margin: 40px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(255, 106, 26, 0.2); /* subtle orange glow */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profile-section h2 {
+  color: #ff6a1a;             /* orange heading */
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.profile-details, 
+.profile-rentals {
+  margin-top: 30px;
+}
+
+/* ==== Form-like Account Details ==== */
+.account-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #ff6a1a; /* orange labels */
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background: #2a2a2a;
+  color: #f0f0f0;
+  font-size: 1rem;
+}
+
+.form-group input[readonly] {
+  cursor: not-allowed;
+  background: #333;
+}
+
+/* ==== Rental History ==== */
+.profile-rentals ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.profile-rentals ul li {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  background-color: #333;  /* dark background for rental items */
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.profile-rentals ul li:nth-child(even) {
+  background-color: #2a2a2a;
+}
+
+/* ==== Logout Button ==== */
+.nav-btn.logout-btn {
+  background-color: #cd5503;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 4px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-btn.logout-btn:hover {
+  background-color: #b44d02;
+}
+
+/* ==== Booking History Table ==== */
+.booking-history {
+  margin-top: 30px;
+}
+
+.booking-history h3 {
+  color: #ff6a1a; /* orange heading */
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+}
+
+.booking-history table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #2a2a2a;
+  color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(255, 106, 26, 0.2);
+}
+
+.booking-history th,
+.booking-history td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.booking-history th {
+  background-color: #1e1e1e;
+  color: #ff6a1a;
+  font-weight: 700;
+  border-bottom: 2px solid #ff6a1a;
+}
+
+.booking-history tr:nth-child(even) {
+  background-color: #333;
+}
+
+.booking-history tr:hover {
+  background-color: #444;
+}
+
+.booking-history td {
+  border-bottom: 1px solid #444;
+}
+
+/* ==== Scrollable Booking Table ==== */
+.booking-history table-wrapper {
+  max-height: 300px;  /* adjust height as needed */
+  overflow-y: auto;
+  margin-top: 15px;
+  border-radius: 6px;
+}
+
+/* Optional: keep table width consistent */
+.booking-history table {
+  width: 100%;
+  min-width: 600px; /* ensures columns don't collapse */
+}
