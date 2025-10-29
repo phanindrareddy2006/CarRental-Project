@@ -122,11 +122,11 @@ CarRental-Project/
 └── README.md
 
 ```
-👨‍💻 Author
-Phanindra
-💼 B.Tech CSE, KL University
-🌐 GitHub @phanindrareddy2006
-🔗 LinkedIn @phanindrareddy
-✉️ 2300032080@kluniversity.in
+## 👨‍💻 Author  
+**Phanindra Reddy**  
+💼 B.Tech CSE, KL University  
+🌐 [GitHub @phanindrareddy2006](https://github.com/phanindrareddy2006)  
+🔗 [LinkedIn @phanindrareddy](https://www.linkedin.com/in/phanindrareddy)  
 
-<p align="center">⭐ If you like this project, consider giving it a star!</p> <p align="center">✨ Made with passion and creativity by <b>Phanindra</b> ✨</p> ```
+
+<p align="center">⭐ If you like this project, consider giving it a star!</p> <p align="center">✨ Made with passion and creativity by <b>Phanindra</b> ✨</p>
