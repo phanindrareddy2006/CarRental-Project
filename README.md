@@ -35,19 +35,45 @@ Deployed seamlessly on **Vercel**, **Render**, and **Railway**.
 
 ---
 
+🏗️ Deployment Details
+Service	Purpose	URL
+Vercel	Frontend Hosting	Frontend Link
+
+Render	Backend API Hosting	Backend Link
+
+Railway	MySQL Database	Managed service
+🖼️ Screenshots
+
+(Add your screenshots inside frontend/public/screenshots/ and replace the image links below)
+
+HomePage	OurCarsPage
+
+
+🧑‍💻 Author
+
+Donthireddy Phanindra Reddy
+
+🌐 GitHub @phanindrareddy2006
+
+💼 B.Tech CSE, KL University
+
+✉️ 2300032080@kluniversity.in
+	
+
 ## ⚡ Quick Start (Local Setup)
 
-### 1️⃣ Clone the Repository
+### Clone the Repository
 ```bash
 git clone https://github.com/phanindrareddy2006/CarRental-Project.git
 cd CarRental-Project
 
-### 2️⃣ Backend Setup (Spring Boot)
+## Backend Setup (Spring Boot)
 cd car-rental-backend
 # open in STS or run directly
 mvn spring-boot:run
 
-### 3️⃣ Frontend Setup (React)
+## Frontend Setup (React)
 cd ../frontend
 npm install
 npm run dev
+
