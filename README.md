@@ -44,9 +44,13 @@ Render	Backend API Hosting	Backend Link
 Railway	MySQL Database	Managed service
 🖼️ Screenshots
 
-(Add your screenshots inside frontend/public/screenshots/ and replace the image links below)
+## 🖼️ Screenshots
 
-HomePage	OurCarsPage
+### 🏠 Home Page
+![Home Page](frontend/public/HomePage.png)
+
+### 🚗 Our Cars Page
+![Our Cars Page](frontend/public/OurCarsPage.png)
 
 
 🧑‍💻 Author
