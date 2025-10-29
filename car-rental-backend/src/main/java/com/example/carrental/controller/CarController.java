@@ -9,7 +9,7 @@ import org.springframework.http.HttpStatus;
 
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:5173") // allow React frontend
+@CrossOrigin(origins = "https://carrentalbyphanindra-tan.vercel.app") // allow React frontend
 @RestController
 @RequestMapping("/api/cars")
 public class CarController {

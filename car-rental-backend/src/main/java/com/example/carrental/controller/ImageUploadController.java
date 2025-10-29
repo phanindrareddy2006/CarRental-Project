@@ -10,7 +10,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.IOException;
 import java.util.Map;
 
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "https://carrentalbyphanindra-tan.vercel.app")
 @RestController
 @RequestMapping("/api/upload")
 public class ImageUploadController {

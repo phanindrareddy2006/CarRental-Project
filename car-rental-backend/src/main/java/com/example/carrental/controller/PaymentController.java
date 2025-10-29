@@ -13,7 +13,7 @@ import javax.crypto.spec.SecretKeySpec;
 import java.util.HashMap;
 import java.util.Map;
 
-@CrossOrigin(origins = "http://localhost:5173") // update if needed
+@CrossOrigin(origins = "https://carrentalbyphanindra-tan.vercel.app") // update if needed
 @RestController
 @RequestMapping("/api/payments/razorpay")
 public class PaymentController {

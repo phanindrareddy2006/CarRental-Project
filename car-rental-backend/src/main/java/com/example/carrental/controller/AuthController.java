@@ -18,7 +18,7 @@ import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
 
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "https://carrentalbyphanindra-tan.vercel.app")
 @RestController
 @RequestMapping("/api/auth")
 public class AuthController {
