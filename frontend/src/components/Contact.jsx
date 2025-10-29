@@ -14,7 +14,7 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:8118/api/contact/submit", formData);
+      await axios.post("https://carrental-project-8862.onrender.com/api/contact/submit", formData);
 
       setIsError(false);
       setSubmitMessage("Thank you! We'll get back to you soon.");

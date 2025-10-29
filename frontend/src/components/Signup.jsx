@@ -24,7 +24,7 @@ export default function Signup() {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:8118/api/auth/signup", inputs);
+      await axios.post("https://carrental-project-8862.onrender.com/api/auth/signup", inputs);
 
       setIsError(false);
       setMessage("Signup successful! Redirecting to login...");

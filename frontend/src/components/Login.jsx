@@ -16,7 +16,7 @@ export default function Login({ onSuccess }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:8118/api/auth/login", inputs);
+      const res = await axios.post("https://carrental-project-8862.onrender.com/api/auth/login", inputs);
       const responseData = res.data;
 
       // Backend may return either:

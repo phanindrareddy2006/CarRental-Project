@@ -17,7 +17,7 @@ export default function Profile({ user, onLogout }) {
     const fetchBookings = async () => {
       try {
         const response = await fetch(
-          `http://localhost:8118/api/bookings/user/${user.username}`
+          `https://carrental-project-8862.onrender.com/api/bookings/user/${user.username}`
         );
         if (response.ok) {
           const data = await response.json();

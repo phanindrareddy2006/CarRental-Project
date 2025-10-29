@@ -35,7 +35,7 @@ export default function BookingPage({ user }) {
       const priceRaw = parseFloat(carFromState.price?.toString().replace(/\₹/g, "")) || 0;
       setCar({ ...carFromState, priceRaw, priceDisplay: `₹${priceRaw}` });
     } else {
-      fetch(`http://localhost:8118/api/cars/1`)
+      fetch(`https://carrental-project-8862.onrender.com/api/cars/1`)
         .then((res) => res.json())
         .then((data) => {
           const priceRaw = parseFloat(data.price?.toString().replace(/\₹/g, "")) || 0;
@@ -73,7 +73,7 @@ export default function BookingPage({ user }) {
     try {
       setLoading(true);
 
-      const orderRes = await fetch("http://localhost:8118/api/payments/razorpay/create-order", {
+      const orderRes = await fetch("https://carrental-project-8862.onrender.com/api/payments/razorpay/create-order", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -99,7 +99,7 @@ export default function BookingPage({ user }) {
 
         handler: async (response) => {
           try {
-            const verifyRes = await fetch("http://localhost:8118/api/payments/razorpay/verify", {
+            const verifyRes = await fetch("https://carrental-project-8862.onrender.com/api/payments/razorpay/verify", {
               method: "POST",
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify({
@@ -122,7 +122,7 @@ export default function BookingPage({ user }) {
                 orderId: response.razorpay_order_id,
               };
 
-              const bookingRes = await fetch("http://localhost:8118/api/bookings", {
+              const bookingRes = await fetch("https://carrental-project-8862.onrender.com/api/bookings", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(bookingData),

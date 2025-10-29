@@ -31,7 +31,7 @@ export default function OurCars({ user }) {
   }, [location.state]);
   // ✅ Fetch cars from backend
   useEffect(() => {
-    fetch("http://localhost:8118/api/cars")
+    fetch("https://carrental-project-8862.onrender.com/api/cars")
       .then((res) => res.json())
       .then((data) => {
         if (Array.isArray(data)) {
@@ -58,7 +58,7 @@ export default function OurCars({ user }) {
     formData.append("file", file);
 
     try {
-      const res = await fetch("http://localhost:8118/api/upload", {
+      const res = await fetch("https://carrental-project-8862.onrender.com/api/upload", {
         method: "POST",
         body: formData,
       });
@@ -109,7 +109,7 @@ export default function OurCars({ user }) {
     };
 
     try {
-      const res = await fetch("http://localhost:8118/api/cars", {
+      const res = await fetch("https://carrental-project-8862.onrender.com/api/cars", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
@@ -143,7 +143,7 @@ export default function OurCars({ user }) {
     };
 
     try {
-      const res = await fetch(`http://localhost:8118/api/cars/${editCar.id}`, {
+      const res = await fetch(`https://carrental-project-8862.onrender.com/api/cars/${editCar.id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
@@ -168,7 +168,7 @@ export default function OurCars({ user }) {
   // ===== Delete car =====
   const handleRemoveCar = (id) => {
     if (!window.confirm("Are you sure you want to delete this car?")) return;
-    fetch(`http://localhost:8118/api/cars/${id}`, { method: "DELETE" })
+    fetch(`https://carrental-project-8862.onrender.com/api/cars/${id}`, { method: "DELETE" })
       .then(() => setCars(cars.filter((c) => c.id !== id)))
       .catch((err) => console.error("Delete failed:", err));
   };
