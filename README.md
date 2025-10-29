@@ -5,14 +5,6 @@
 <h1 align="center">🚗 Car Rental Management System</h1>
 <p align="center">Built with passion by <b>Phanindra</b></p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Frontend-React%20(Vite)-61DAFB?logo=react&logoColor=white" alt="React Badge"/>
-  <img src="https://img.shields.io/badge/Backend-Spring%20Boot-6DB33F?logo=springboot&logoColor=white" alt="Spring Boot Badge"/>
-  <img src="https://img.shields.io/badge/Database-MySQL-00758F?logo=mysql&logoColor=white" alt="MySQL Badge"/>
-  <img src="https://img.shields.io/badge/Deployment-Vercel%20|%20Render%20|%20Railway-000000?logo=vercel&logoColor=white" alt="Deployment Badge"/>
-  <img src="https://img.shields.io/badge/Cloudinary-Image%20Storage-3448C5?logo=cloudinary&logoColor=white" alt="Cloudinary Badge"/>
-</p>
-
 ---
 
 <p align="center">
