@@ -56,7 +56,7 @@ Deployed seamlessly on **Vercel**, **Render**, and **Railway**.
 
 | Service | Purpose | URL |
 |:---------|:---------|:----|
-| **Vercel** | Frontend Hosting | [Frontend Link](https://carrentalbyphanindra-tan.vercel.app) |
+| **Vercel** | Frontend Hosting | [Frontend Link](https://carrental.tooncore.me/) |
 | **Render** | Backend API Hosting | [Backend Link](https://carrental-project-8862.onrender.com) |
 | **Railway** | MySQL Database | Managed Cloud Database |
 
