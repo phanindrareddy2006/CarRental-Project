@@ -24,7 +24,7 @@ Deployed seamlessly on **Vercel**, **Render**, and **Railway**.
 
 ## 🌐 Live Demo
 
-- **Frontend:** [https://carrentalbyphanindra-tan.vercel.app](https://carrentalbyphanindra-tan.vercel.app)  
+- **Frontend:** [CarRental](https://carrental.tooncore.me/)  
 - **Backend API:** [https://carrental-project-8862.onrender.com](https://carrental-project-8862.onrender.com)
 
 ---
