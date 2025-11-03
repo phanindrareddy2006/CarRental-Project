@@ -9,6 +9,7 @@ export default function Signup() {
     email: "",
     password: "",
     role: "customer",
+    adminCode: "",
   });
   const [message, setMessage] = useState("");
   const [isError, setIsError] = useState(false);
@@ -23,8 +24,17 @@ export default function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    if (inputs.role === "admin" && inputs.adminCode !== "admin") {
+      setIsError(true);
+      setMessage("Invalid admin code!");
+      return;
+    }
+
     try {
-      await axios.post("https://carrental-project-8862.onrender.com/api/auth/signup", inputs);
+      await axios.post(
+        "https://carrental-project-8862.onrender.com/api/auth/signup",
+        inputs
+      );
 
       setIsError(false);
       setMessage("Signup successful! Redirecting to login...");
@@ -35,12 +45,12 @@ export default function Signup() {
         email: "",
         password: "",
         role: "customer",
+        adminCode: "",
       });
 
       setTimeout(() => {
         navigate("/login");
       }, 1000);
-
     } catch (err) {
       setIsError(true);
       const errMsg = err.response?.data?.message || "Signup error";
@@ -52,6 +62,7 @@ export default function Signup() {
     <div className="signup-container">
       <form className="signup-box" onSubmit={handleSubmit}>
         <h2>Signup</h2>
+
         <input
           name="username"
           value={inputs.username}
@@ -59,6 +70,7 @@ export default function Signup() {
           placeholder="Username"
           required
         />
+
         <input
           name="email"
           value={inputs.email}
@@ -67,6 +79,7 @@ export default function Signup() {
           type="email"
           required
         />
+
         <input
           name="password"
           value={inputs.password}
@@ -75,10 +88,24 @@ export default function Signup() {
           type="password"
           required
         />
+
         <select name="role" value={inputs.role} onChange={handleChange}>
           <option value="customer">Customer</option>
           <option value="admin">Admin</option>
         </select>
+
+        {/* Show admin code input only if role is admin */}
+        {inputs.role === "admin" && (
+          <input
+            name="adminCode"
+            value={inputs.adminCode}
+            onChange={handleChange}
+            placeholder="Enter admin code"
+            type="password"
+            required
+          />
+        )}
+
         <button type="submit" disabled={isRedirecting}>
           {isRedirecting ? "Redirecting..." : "Sign Up"}
         </button>
